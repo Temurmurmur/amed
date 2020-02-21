@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tourism</title>
+
+  <link rel="stylesheet" href="uikit/uikit.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="uikit/uikit.min.js"></script>
+  <script src="uikit/uikit-icons.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script defer src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="content-wrap-tour" id="app">
+    <nav class="main-wrap-tour shadow-naw">
+      <div class="wrap-nav-tour">
+        <a href="#" class="logo-tour"><img src="img/logo-tour.svg" alt=""></a>
+        <div class="left-side-nav">
+          <span class="rus-v">Москва, ул. Малая Полянка, д. 2 (м. Полянка)</span>
+          <span class="rus-v">Ковров, ул. Ватутина, 90</span>
+          <span class="eng-v">Moscow: Askonamed Clinic, Moscow, Malaya Polyanka st., 2</span>
+          <span class="eng-v">Kovrov: The First Clinical Medical Center, Vatutin st., 90</span>
+          <!-- <a href="tel:+79611119682" class="call-tour">+7(961)111-96-82</a> -->
+          <button type="button" class="btn-pink-border rus-v" name="button" uk-toggle="target: #modal-close-default">Связаться с нами</button>
+          <button type="button" class="btn-pink-border eng-v" name="button" uk-toggle="target: #modal-close-default">To contact us</button>
+          <div class="lang-btn-wrap">
+            <button type="button" name="button" class="active-lang rus">RU</button>
+            <button type="button" name="button" class="eng">ENG</button>
+          </div>
+        </div>
+        <button class="uk-button uk-button-default toggle-menu" type="button" uk-toggle="target: #offcanvas-flip"><span uk-icon="icon: menu; ratio: 1"></span></button>
+
+        <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+          <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="lang-btn-wrap">
+              <button type="button" name="button" class="active-lang rus">RU</button>
+              <button type="button" name="button" class="eng">ENG</button>
+            </div>
+            <div class="toggle-adres rus-v">
+              <span>Адреса :</span><br>
+              <span>Москва, ул. Малая Полянка, д. 2 (м. Полянка)</span>
+              <hr>
+              <span>Ковров, ул. Ватутина, 90</span>
+            </div>
+            <div class="toggle-adres eng-v">
+              <span>Addresses:</span><br>
+              <span>Moscow: Askonamed Clinic, Moscow, Malaya Polyanka st., 2</span>
+              <hr>
+              <span>Kovrov: The First Clinical Medical Center, Vatutin st., 90</span>
+            </div>
+            <button type="button" class="btn-pink-border rus-v" name="button" uk-toggle="target: #modal-close-default">Связаться с нами</button>
+            <button type="button" class="btn-pink-border eng-v" name="button" uk-toggle="target: #modal-close-default">To contact us</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <img src="img/banner.jpg" class="banner-top-tour" alt="">
+    </div>
+
+    <div class="main-wrap-tour">
+      <h2 class="top-label rus-v">
+        Сеть клинических центров Askonamed<br class="mob-none"><br class="mob-none">
+        относится к числу инновационных медицинских учреждений страны и принимает на лечение пациентов со всех стран мира
+        <br class="mob-none"><br class="mob-none">
+        Сегодня в сеть входят:
+      </h2>
+      <h2 class="top-label eng-v">
+        Askonamed Clinical Center network is one of the innovative health care facilities in Russia and takes patients from all over the world.
+        <br class="mob-none"><br class="mob-none">
+        Today the network includes two clinics:
+      </h2>
+      <div class="double-block-tour">
+        <div class="uk-margin-medium-right clinic-item dis-mrg-mob">
+          <div class="info-clinic-side rus-v">
+            <h5>Первый клинический медицинский центр -</h5>
+            <p>
+              ведущая клиника в России по оказанию высокотехнологичной медицинской помощи с применением новых, сложных, уникальных технологий.
+            </p>
+          </div>
+          <div class="info-clinic-side eng-v">
+            <h5>The First Clinical Medical Center is</h5>
+            <p>
+              the leading clinic in Russia for the provision high-tech medical care using new, complex, unique technologies
+            </p>
+          </div>
+          <div class="img-side-clinic">
+            <img src="img/pkmc.jpg" alt="">
+          </div>
+        </div>
+        <div class="clinic-item">
+          <div class="info-clinic-side rus-v">
+            <h5>Клиника Askonamed -</h5>
+            <p>
+              инновационная клиника в России, в которой реализована концепция «4 П медицины» - предиктивной, превентивной и персонализированной медицины.
+            </p>
+          </div>
+          <div class="info-clinic-side eng-v">
+            <h5>Askonamed clinic is</h5>
+            <p>
+              the innovative Russian clinic which implements the concept of "4 P medicine" - predictive, preventive and personalized medicine.
+            </p>
+          </div>
+          <div class="img-side-clinic">
+            <img src="img/amed.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="info-desck">
+        <div class="desk-item rus-v">
+          <h3>Лечение:</h3>
+          <ul class="list-amed">
+            <li>Лечение соответствует международным протоколам</li>
+            <li>Высокотехнологичная медицинская помощь для лечения сложных заболеваний</li>
+            <li>Fast Track хирургия (FTS) – методика ускоренного восстановления после хирургических операций, минимум стресса.</li>
+            <li>Инновационные операции - 90% хирургических вмешательств мы выполняем лапароскопическим методом</li>
+            <li>Интеграция лучших зарубежных практик</li>
+          </ul>
+        </div>
+        <div class="desk-item eng-v">
+          <h3>Treatment</h3>
+          <ul class="list-amed">
+            <li>Treatment meets international standards</li>
+            <li>High-tech medical care for treatment of complex diseases</li>
+            <li>Fast Track technologies for enhanced recovery after surgery</li>
+            <li>MORE THAN 90% OF OPERATIONS ARE MADE BY LAPAROSCOPIC ACCESS.</li>
+            <li>Integration of best foreign practices</li>
+          </ul>
+        </div>
+        <div class="desk-item rus-v">
+          <h3>Сервис:</h3>
+          <ul class="list-amed">
+            <li>Отсутствие языкового барьера - англоговорящий персонал клиник</li>
+            <li>Визовая поддержка - организация приглашений на въезд в Российскую Федерацию. Мы - единственные в России, кто входит в реестр Управления по вопросам миграции УМВД</li>
+            <li>Полное сопровождение на всех этапах лечения - персональный менеджер </li>
+            <li>Трансфер из аэропорта/вокзала до клиники </li>
+            <li>Бронирование гостиницы</li>
+            <li>Программы для сопровождающих лиц</li>
+            <li>Перевод медицинской документации</li>
+            <li>Палаты повышенного комфорта</li>
+          </ul>
+        </div>
+        <div class="desk-item eng-v">
+          <h3>Service</h3>
+          <ul class="list-amed">
+            <li>English speaking personnel and doctors</li>
+            <li>Visa support - arranging invitation for entry into Russian Federation</li>
+            <li>Personal manager supports at all stages of treatment</li>
+            <li>Transfer service</li>
+            <li>Hotel booking</li>
+            <li>Programs for attendants</li>
+            <li>Translation of medical documents</li>
+            <li>Comfort hospital rooms</li>
+          </ul>
+        </div>
+        <div class="desk-item rus-v">
+          <h3>Стоимость и оплата услуг:</h3>
+          <ul class="list-amed">
+            <li>Выгодно - стоимость услуг гораздо ниже, чем в Европе, Израиле и США.</li>
+            <li>Стоимость лечения рассчитывается индивидуально.</li>
+            <li>Оплата производится непосредственно в клинике - возможен как наличный, так и безналичный расчет.</li>
+          </ul>
+        </div>
+        <div class="desk-item eng-v">
+          <h3>Costs and payments</h3>
+          <ul class="list-amed">
+            <li>Payable – cost is lower than in Europe and Israel</li>
+            <li>Cost is calculated individually</li>
+            <li>Payments are made at the clinics. Payments by cash and by cards.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="med-help-wrap">
+        <div class="accordion-wrap">
+          <h3 class="rus-v">Медицинская помощь иностранным гражданам по направлениям:</h3>
+          <h3 class="eng-v">Healthcare for foreigners</h3>
+          <ul uk-accordion class="rus-v">
+            <li class="acc-item uk-open">
+              <a class="uk-accordion-title rus-v" href="#">Сердечно-сосудистая хирургия, аритмология</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed rus-v">
+                  <li>Эндоваскулярная, хирургическая коррекция нарушений ритма сердца с имплантацией (а также без имплантации) кардиовертера-дефибриллятора у взрослых;</li>
+                  <li>Эндоваскулярное лечение врожденных, ревматических и неревматических пороков клапанов сердца, опухолей сердца;</li>
+                  <li>Эндоваскулярная коррекция заболеваний аорты и магистральных артерий и др.</li>
+                  <li>Радиочастотная катетерная абляция (РЧА) с использованием навигационной системы «Биоток»;</li>
+                  <li>Имплантация ЭКС.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title rus-v" href="#">Онкология</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed rus-v">
+                  <li>Реконструктивно-пластические, микрохирургические, обширные циторедуктивные, расширенно- комбинированные хирургические вмешательства при злокачественных новообразованиях;</li>
+                  <li>Комбинированное лечение злокачественных новообразований, сочетающее обширные хирургические вмешательства и лекарственное противоопухолевое лечение, требующее интенсивной поддерживающей и коррегирующей терапии и др.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title rus-v" href="#">Пластическая хирургия</a>
+              <div class="uk-accordion-content">
+                <p>Любые операции на лице и теле</p>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title rus-v" href="#">Хирургическое лечение ожирения</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed rus-v">
+                  <li>Резекция желудка — уменьшение объема желудка до 100-120 мл за счет удаления его большей части.</li>
+                  <li>Лапароскопическое гастрошунтирование — формирование маленького желудка, объемом около 50 мл.</li>
+                  <li>Повторные бариатрические операции</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title rus-v" href="#">Гинекология</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed rus-v">
+                  <li>Органосохраняющие и реконструктивно-пластические операции распространенных форм гигантских опухолей органов малого таза, органов брюшной полости у женщин с использованием лапароскопического и комбинированного доступов.</li>
+                  <li>Неинвазивные и миниинвазивные операции по лечению миомы матки, аденомиоза (узловой формы) у женщин с применением реконструктивно-пластических методов, эмболизации маточных артерий и ультразвуковой абляции под УЗ- контролем и
+                    (или) контролем магнитно-резонансной томографии и др.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title rus-v" href="#">Общая и абдоминальная хирургия</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed double-col rus-v">
+                  <li>Хирургия печени и желчевыводящих путей.</li>
+                  <li>Хирургическое лечение грыж брюшной стенки.</li>
+                  <li>Хирургическое лечение грыжи пищеводного отверстия диафрагмы.</li>
+                  <li>Хирургия поджелудочной железы.</li>
+                  <li>Удаление доброкачественных новообразований.</li>
+                  <li>Oперации по поводу вросшего ногтя.</li>
+                  <li>Флебэктомия.</li>
+                  <li>Иссечение анальных трещин.</li>
+                  <li>Тромбэктомия при геморрое.</li>
+                  <li>Секторальная резекция молочной железы.</li>
+                  <li>Операции по удалению доброкачественных новообразований.</li>
+                  <li>Операция по удалению вен нижних конечностей при варикозной болезни.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title rus-v" href="#">Офтальмология</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed rus-v">
+                  <li>Реконструктивно-пластические и оптико-реконструктивные операции при травмах * (открытых, закрытых) глаза, его придаточного аппарата, орбиты;</li>
+                  <li>Транспупиллярная, микроинвазивная энергетическая оптико-реконструктивная, интравитреальная, эндовитреальная 23-27 гейджевая хирургия при витреоретинальной патологии различного генеза и др.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title rus-v" href="#">Стоматология</a>
+              <div class="uk-accordion-content">
+                <p class="rus-v">Протезирование и имплантология</p>
+              </div>
+            </li>
+          </ul>
+
+          <ul uk-accordion class="eng-v">
+            <li class="acc-item uk-open">
+              <a class="uk-accordion-title eng-v" href="#">Arrhythmology and Vascular surgery</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed eng-v">
+                  <li>Aortic and other arteries aneurysm</li>
+                  <li>atherosclerosis</li>
+                  <li>Lower extremity varicose vein disease</li>
+                  <li>Veins and arteries embolism</li>
+                  <li>venous thrombosis</li>
+                  <li>ESRD</li>
+                  <li>bradyarrhythmia</li>
+                  <li>tachyarrhythmia</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title eng-v" href="#">Oncology</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed eng-v">
+                  <li>Reconstructive-plastic, microsurgical, extensive cytoreductive, advanced-combined surgical interventions for malignant tumor</li>
+                  <li>Combined treatment of malignant tumor, combining extensive surgical procedures and anticancer drug treatment, requiring intensive supportive and corrective therapy</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title eng-v" href="#">Gynecology</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed eng-v">
+                  <li>Organ-preserving and reconstructive plastic surgery of common forms of giant tumors of the pelvic organs, abdominal organs in women using laparoscopic and combined approaches</li>
+                  <li>Non-invasive and minimally invasive operations for the treatment of uterine fibroids, adenomyosis (nodular form) in women using reconstructive plastic methods, uterine artery embolization and ultrasound ablation under ultrasound
+                    and / or MRI</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title eng-v" href="#">General and abdominal surgery</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed double-col eng-v">
+                  <li>Hepato-Pancreato-Biliary surgery</li>
+                  <li>abdominal hernia</li>
+                  <li>gastroesophageal hernia</li>
+                  <li>Benign tumor resection</li>
+                  <li>Phlebectomy</li>
+                  <li>hemorrhoidectomy</li>
+                  <li>thrombectomy</li>
+                  <li>partial mastectomy</li>
+                  <li>Vein ablation</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title eng-v" href="#">Ophtalmology</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed eng-v">
+                  <li>Combined phacoemulsification and microinvasive glaucoma surgery</li>
+                  <li>Pars plana vitrectomy with 25 or 27 gauge (vitreoretinal surgery) for people with macular hole, epiretinal membrane, retinal detachment, dislocated intraocular lens et al.</li>
+                  <li>Anti-angiogenic therapy. Intravitreal injections - Aflibercept, Ranibizumab</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title eng-v" href="#">Obesity surgery</a>
+              <div class="uk-accordion-content">
+                <ul class="list-amed eng-v">
+                  <li>Gastric resection</li>
+                  <li>Laparoscopic gastric bypass</li>
+                  <li>Bariatric reoperation</li>
+                </ul>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title eng-v" href="#">Plastic surgery</a>
+              <div class="uk-accordion-content">
+                <p>facioplasty and body plastic surgery</p>
+              </div>
+            </li>
+            <li class="acc-item">
+              <a class="uk-accordion-title eng-v" href="#">Dentistry</a>
+              <div class="uk-accordion-content">
+                <p class="eng-v">dental prosthetic rehabilitation and implant dentistry</p>
+              </div>
+            </li>
+          </ul>
+
+          <span class="ps-med rus-v">Полный спектр диагностических исследований!</span>
+          <span class="ps-med eng-v">Full range of tests</span>
+        </div>
+        <div class="img-triple">
+          <img src="img/tr1.jpg" alt="">
+          <img src="img/tr2.jpg" alt="">
+          <img src="img/tr3.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="appeal-wrap">
+        <h3 class="rus-v">Порядок обращения иностранных граждан </h3>
+        <h3 class="eng-v">Application</h3>
+        <div class="appeal-content">
+          <div class="appeal-item">
+            <h4>01</h4>
+            <p class="rus-v">
+              Отправьте запрос через форму на сайте или позвоните
+            </p>
+            <p class="eng-v">
+              Send the request via contact form.
+            </p>
+          </div>
+          <div class="appeal-item">
+            <h4>02</h4>
+            <p class="rus-v">
+              Отправьте нам ваши медицинские заключения
+            </p>
+            <p class="eng-v">
+              Send the medical documents you have.
+            </p>
+          </div>
+          <div class="appeal-item">
+            <h4>03</h4>
+            <p class="rus-v">
+              Дистанционная консультация с нашим специалистом
+            </p>
+            <p class="eng-v">
+              Distance consultation
+            </p>
+          </div>
+          <div class="appeal-item">
+            <h4>04</h4>
+            <p class="rus-v">
+              Подготовка плана вашего лечения
+            </p>
+            <p class="eng-v">
+              Treatment plan
+            </p>
+          </div>
+          <div class="appeal-item">
+            <h4>05</h4>
+            <p class="rus-v">
+              Организация приезда и размещения
+            </p>
+            <p class="eng-v">
+              Arranging the visit and accommodation
+            </p>
+          </div>
+          <div class="appeal-item">
+            <h4>06</h4>
+            <p class="rus-v">
+              После выписки - дистанционный мониторинг здоровья
+            </p>
+            <p class="eng-v">
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="support-block main-wrap-tour">
+      <form class="support-form" action="">
+        <h3 class="rus-v">Служба поддержки</h3>
+        <h3 class="eng-v">Support Service</h3>
+        <div class="uk-flex uk-margin-medium-top mob-flex-form rus-v">
+          <input class="inp-amed" type="text" name="name" value="" placeholder="Ваше имя" required>
+          <input class="inp-amed" type="text" name="mail" value="" placeholder="Ваш email" required>
+        </div>
+        <div class="uk-flex uk-flex-middle mrg-top-tour mob-flex-form rus-v">
+          <button type="button" class="turq-btn" name="button" uk-toggle="target: #modal-close-default">Получить консультацию</button>
+          <p class="info-string">Вы можете задать любые вопросы нашим сотрудникам.</p>
+        </div>
+
+        <div class="uk-flex uk-margin-medium-top mob-flex-form eng-v">
+          <input class="inp-amed" type="text" name="name" value="" placeholder="Name" required>
+          <input class="inp-amed" type="text" name="mail" value="" placeholder="E-mail" required>
+        </div>
+        <div class="uk-flex uk-flex-middle mrg-top-tour mob-flex-form eng-flex eng-v">
+          <button type="button" class="turq-btn" name="button" uk-toggle="target: #modal-close-default">
+            consultation</button>
+          <p class="info-string">You can ask any questions to our employees.</p>
+        </div>
+      </form>
+    </div>
+
+    <div class="main-wrap-tour">
+      <div class="video-wrap uk-margin-large-top">
+        <div class="video-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/plIfn-7Vwhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-label">
+          <h2 class="rus-v">Видео о Первом клиническом медицинском центре</h2>
+          <h2 class="eng-v">See video about the First Clinical Medical Center</h2>
+        </div>
+      </div>
+      <hr class="hr-amed">
+      <div class="video-wrap uk-margin-large-top">
+        <div class="video-label-rev">
+          <h2 class="rus-v">3D тур о Первом клиническом медицинском центре</h2>
+          <h2 class="eng-v">See 3D tour about the First Clinical Medical Center</h2>
+        </div>
+        <div class="video-item">
+          <style>
+            #ClinicaTour3D {
+              width: 100%;
+              height: 700px;
+            }
+
+            @media only screen and (max-width: 1440px) {
+              #ClinicaTour3D {
+                width: 100%;
+                height: 600px;
+              }
+            }
+
+            @media only screen and (max-width: 1024px) {
+              #ClinicaTour3D {
+                width: 100%;
+                height: 500px;
+              }
+            }
+
+            @media only screen and (max-width: 600px) {
+              #ClinicaTour3D {
+                width: 100%;
+                height: 350px;
+              }
+            }
+          </style>
+          <iframe id="ClinicaTour3D" title="3D Тур по ПКМЦ" src="/about/tour3d/Index2.html?Html5=only"></iframe>
+        </div>
+      </div>
+
+      <div class="wrap-preinfo rus-v">
+        <p>Медицинская помощь иностранным гражданам, временно пребывающим или постоянно проживающим в Российской Федерации, оказывается в соответствии с Постановлением Правительства РФ от 06.03.2016г №186 «Об утверждении правил оказания медицинской
+          помощи иностранным гражданам на территории Российской Федерации»:</p>
+        <ul class="list-amed col-green">
+          <li>иностранные граждане, являющиеся застрахованными лицами в соответствии с Федеральным законом "Об обязательном медицинском страховании в Российской Федерации", имеют право на бесплатное оказание медицинской помощи в рамках обязательного
+            медицинского страхования;</li>
+          <li>медицинская помощь иностранным гражданам оказывается в соответствии с договорами о предоставлении платных медицинских услуг. </li>
+        </ul>
+      </div>
+
+      <div class="wrap-preinfo eng-v">
+        <p>Health care to foreigners temporarily staying or permanently residing in the Russian Federation is provided in accordance with the Decree of the Government of the Russian Federation dated 06.03.2016 No. 186 “On approval of the rules for
+          the provision of medical assistance to foreign citizens on the territory of the Russian Federation</p>
+        <ul class="list-amed col-green">
+          <li>Foreigners who are insured in accordance with the Federal Law "On Compulsory Medical Insurance in the Russian Federation" are entitled to free medical care under compulsory medical insurance</li>
+          <li>Health care to foreigners is provided in accordance with contracts for the provision of paid medical services.</li>
+        </ul>
+      </div>
+
+      <div class="contact-side-wrap">
+        <h2 class="green-label rus-v">Контакты сети клинических центров Askonamed</h2>
+        <h2 class="green-label eng-v">Contacts Askonamed Clinical Center network</h2>
+        <div class="wrap-map-iframes">
+          <div class="map-item">
+            <h4 class="rus-v">В Москве:<br> Клиника Askonamed, ул. Малая Полянка, 2</h4>
+            <h4 class="eng-v">Moscow:<br> Askonamed Clinic, Moscow, Malaya Polyanka st., 2</h4>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CKUxNRzZ" width="100%" height="100%" frameborder="1" allowfullscreen="true"></iframe>
+          </div>
+          <div class="map-item">
+            <h4 class="rus-v">В Коврове:<br> Первый клинический медицинский центр, ул. Ватутина, 90 </h4>
+            <h4 class="eng-v">Kovrov:<br> The First Clinical Medical Center, Vatutin st., 90 </h4>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CKUxRMy5" width="100%" height="100%" frameborder="1" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="foreign">
+          <h4 class="rus-v">Отдел сопровождения иностранных граждан</h4>
+          <h4 class="eng-v">Foreign relations detp</h4>
+          <div class="uk-flex uk-margin-small-bottom uk-flex-middle">
+            <div class="label-call">Phone:</div>
+            <a href="tel:+79611119682" class="link-foreign">+7(961) 111-96-82</a>
+          </div>
+          <div class="uk-flex uk-flex-middle">
+            <div class="label-call">E-mail:</div>
+            <a href="mailto:askonamed@askonamed.ru" class="link-foreign">askonamed@askonamed.ru</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="main-wrap-tour footer-tour-wrap">
+    <div class="content-footer">
+      <div class="copy-tour">
+        © 2020 Сеть клинических медицинских центров Askonamed
+      </div>
+      <div class="footer-right-side">
+        <div>Москва, ул. Малая Полянка, д. 2 (м. Полянка)</div>
+        <a href="tel:+79611119682">+7(961) 111-96-82</a>
+        <a href="#">Получить консультацию</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal-close-default" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body modal-wrap-amed">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <h2 class="uk-modal-title tour-title-mod rus-v">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h2>
+      <h2 class="uk-modal-title tour-title-mod eng-v">TO GET THE CONSULTATION</h2>
+      <form action="">
+        <div class="callback-amed rus-v">
+          <input type="text" name="name" placeholder="Ваше имя*" required>
+          <input type="text" name="mail" placeholder="Ваш email*" required>
+          <!-- <textarea name="name" placeholder="Напишите Ваш вопрос"></textarea> -->
+          <button type="submit" class="btn-send">Отправить</button>
+        </div>
+        <div class="callback-amed eng-flex eng-v">
+          <input type="text" name="name" placeholder="Your name*" required>
+          <input type="text" name="mail" placeholder="Your email*" required>
+          <!-- <textarea name="name" placeholder="Напишите Ваш вопрос"></textarea> -->
+          <button type="submit" class="btn-send">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
